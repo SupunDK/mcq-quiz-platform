@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3306
+- Generation Time: Nov 08, 2020 at 11:58 AM
+- Server version: 5.7.24
+- PHP Version: 7.2.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="forumac_quiz_integration" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="math_quizes">
+                CREATE TABLE `math_quizes` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `publisher` varchar(255) NOT NULL,
+                  `time_stamp` int(11) NOT NULL,
+                  `quiz_name` varchar(255) NOT NULL,
+                  `ques_01` varchar(255) NOT NULL,
+                  `ques_02` varchar(255) DEFAULT NULL,
+                  `ques_03` varchar(255) DEFAULT NULL,
+                  `ques_04` varchar(255) DEFAULT NULL,
+                  `ques_05` varchar(255) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="math_resps">
+                CREATE TABLE `math_resps` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `quiz_id_name` varchar(255) NOT NULL,
+                  `avishka_perera` varchar(255) NOT NULL,
+                  `pulasthi_weerasooriya` varchar(255) NOT NULL,
+                  `ramith_hettiaarachchi` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(255) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `password` varchar(255) NOT NULL,
+                  `status` varchar(6) NOT NULL DEFAULT 'Poster',
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'forumac_quiz_integration'
+    -->
+    <database name="forumac_quiz_integration">
+        <!-- Table math_quizes -->
+        <table name="math_quizes">
+            <column name="id">24</column>
+            <column name="publisher">moki</column>
+            <column name="time_stamp">1604809787</column>
+            <column name="quiz_name">mised_3_and_51604809752</column>
+            <column name="ques_01">Question 01#1~1. #0~2. #0~3. #0~4. #0~5. </column>
+            <column name="ques_02">Question 02#1~1. #0~2. #0~3. #0~4. #0~5. </column>
+            <column name="ques_03">Question 03#1~1. #1~2. #1~3. #1~4. #1~5. </column>
+            <column name="ques_04">Question 04#1~1. #0~2. #0~3. #0~4. #0~5. </column>
+            <column name="ques_05">NULL</column>
+        </table>
+        <table name="math_quizes">
+            <column name="id">21</column>
+            <column name="publisher">moki</column>
+            <column name="time_stamp">1604809699</column>
+            <column name="quiz_name">only_011604809581</column>
+            <column name="ques_01">Question 01#1~1. #0~2. #0~3. #0~4. #0~5. </column>
+            <column name="ques_02">NULL</column>
+            <column name="ques_03">NULL</column>
+            <column name="ques_04">NULL</column>
+            <column name="ques_05">NULL</column>
+        </table>
+        <table name="math_quizes">
+            <column name="id">25</column>
+            <column name="publisher">moki</column>
+            <column name="time_stamp">1604828655</column>
+            <column name="quiz_name">number_changed1604828630</column>
+            <column name="ques_01">Question 01#1~(1)#0~(2)#0~(3)#0~(4)#0~(5)</column>
+            <column name="ques_02">Question 02#0~(1)#1~(2)#0~(3)#0~(4)#0~(5)</column>
+            <column name="ques_03">Question 03#0~(1)#0~(2)#1~(3)#0~(4)#0~(5)</column>
+            <column name="ques_04">Question 04#0~(1)#0~(2)#0~(3)#1~(4)#0~(5)</column>
+            <column name="ques_05">Question 05#0~(1)#0~(2)#0~(3)#0~(4)#1~(5)</column>
+        </table>
+        <table name="math_quizes">
+            <column name="id">23</column>
+            <column name="publisher">moki</column>
+            <column name="time_stamp">1604809752</column>
+            <column name="quiz_name">all_entered1604809727</column>
+            <column name="ques_01">Question 01#1~1. #0~2. #0~3. #0~4. #0~5. </column>
+            <column name="ques_02">Question 02#0~1. #1~2. #0~3. #0~4. #0~5. </column>
+            <column name="ques_03">Question 03#0~1. #0~2. #1~3. #0~4. #0~5. </column>
+            <column name="ques_04">Question 04#0~1. #0~2. #0~3. #1~4. #0~5. </column>
+            <column name="ques_05">Question 05#0~1. #0~2. #0~3. #0~4. #1~5. </column>
+        </table>
+        <!-- Table math_resps -->
+        <!-- Table users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="username">Avishka Perera</column>
+            <column name="email">pereramat2000@gmail.com</column>
+            <column name="password">202cb962ac59075b964b07152d234b70</column>
+            <column name="status">Admin</column>
+        </table>
+        <table name="users">
+            <column name="id">2</column>
+            <column name="username">moki</column>
+            <column name="email">moki1999@gmail.com</column>
+            <column name="password">202cb962ac59075b964b07152d234b70</column>
+            <column name="status">Poster</column>
+        </table>
+        <table name="users">
+            <column name="id">4</column>
+            <column name="username">Ramith</column>
+            <column name="email">ramith@gmail.com</column>
+            <column name="password">202cb962ac59075b964b07152d234b70</column>
+            <column name="status">Poster</column>
+        </table>
+        <table name="users">
+            <column name="id">5</column>
+            <column name="username">testing</column>
+            <column name="email">MAT@fgn.com</column>
+            <column name="password">202cb962ac59075b964b07152d234b70</column>
+            <column name="status">Poster</column>
+        </table>
+    </database>
+</pma_xml_export>
